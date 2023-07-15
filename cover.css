@@ -27,10 +27,11 @@ body {
   background-color: rgb(22, 18, 50);
   background-image: url("images/bg3.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   filter: grayscale(10%) saturate(1.2);
 }
 
-.fadein { animation: fadein 2s; }
+.fadein { animation: fadein 1s; }
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -62,6 +63,67 @@ body {
 }
 
 .nav-masthead .active {
-  color: rgb(255, 149, 200);
+  color: rgb(254, 146, 221);
   border-bottom-color: #971c4b;
+}
+
+
+/* ----------------------------------------------- */
+
+#oldDiv {
+  background-color: rgba(8, 5, 35, 0.5);
+  border-radius: 20px;
+  padding: 2em
+  /* transition: width 0.5s ease-in; */
+}
+
+#desc {
+  font-size: 15px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  #honey, #honey2 {
+    display: none;
+  }
+  
+}
+
+#honey {
+  filter: brightness(130%) contrast(80%) saturate(80%) hue-rotate(-10deg);
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  height: 700px;
+}
+#honey2 {
+  filter: brightness(120%) contrast(80%) saturate(90%);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  height: 730px;
+}
+
+.grow-on-hover {
+  transition: transform 1.25s ease; /* Add a smooth transition effect */
+}
+
+.grow-on-hover:hover {
+  transform: scale(1.05); /* Scale the element on hover */
+}
+
+@keyframes rainbowAnimation {
+      0%   { color: #FFA7D1; }      
+      28%  { color: #FFDCCF; }
+      42%  { color: #FFFACD; }
+      57%  { color: #D3FFB3; }
+      71%  { color: #B2FFFF; }
+      85%  { color: #CDCCFF; }
+      100% { color: #FFA7D1; }                
+}
+
+.rainbow-text {
+  animation: rainbowAnimation 10s infinite linear; 
 }
