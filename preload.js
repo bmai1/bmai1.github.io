@@ -5,7 +5,10 @@ var imagesToPreload = [
 "images/bg4.jpg",
 "images/99.png",
 "images/rie.png",
-"images/tsu.png"
+"images/tsu.png",
+"images/sengoku.png",
+"images/senjo.png",
+"images/cum.jpg",
 ];
 
 function preloadImages() {
