@@ -4,14 +4,12 @@
         margin-bottom: 15px
     }
 
-    @media only screen and (max-width: 800px) {
-    #cum {
-        width: 350px;
-    }
+    
+
     
     .meme {
         font-size: 30px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+        font-family: Impact, sans-serif;
         color: white;
         text-shadow: 
         -1.5px -1.5px 0 black,
@@ -20,7 +18,16 @@
         1.5px 1.5px 0 black;
     }
 
+    @media only screen and (max-width: 800px) {
+        #cum {
+            width: 150px;
+        }
+        .meme {
+            font-size: 25px;
+        }
+    }
 </style>
+
 <main class="px-3">
     <p class="lead meme">EVEN ON THE COLDEST NIGHTS</p>
     <img id="cum" src="images/cum.jpg">
