@@ -93,9 +93,12 @@ body {
   filter: brightness(130%) contrast(80%) saturate(80%) hue-rotate(-10deg);
   z-index: -1;
   position: absolute;
-  right: 0;
+  right: -10px;
   bottom: 0%;
   height: 700px;
+  opacity: 0.95;
+  transition: opacity 1s ease-out;
+  
 }
 #honey2 {
   filter: brightness(120%) contrast(80%) saturate(90%);
@@ -104,6 +107,8 @@ body {
   left: 0;
   bottom: 0%;
   height: 730px;
+  opacity: 0.95;
+  transition: opacity 1s ease-out;
 }
 
 .grow-on-hover {
