@@ -28,7 +28,7 @@ body {
   background-image: url("images/bg3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(10%) saturate(1.2);
+  filter: grayscale(30%) saturate(1.2);
 }
 
 .fadein { animation: fadein 1s; }
@@ -90,7 +90,7 @@ body {
 }
 
 #honey {
-  filter: brightness(130%) contrast(80%) saturate(80%) hue-rotate(-10deg);
+  filter: brightness(120%) contrast(80%) saturate(80%) hue-rotate(-10deg);
   z-index: -1;
   position: absolute;
   right: -10px;
@@ -131,4 +131,13 @@ body {
 
 .rainbow-text {
   animation: rainbowAnimation 10s infinite linear; 
+}
+
+#overlay {
+  background-color: rgb(28, 5, 12);
+  opacity: 0.5;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
 }
