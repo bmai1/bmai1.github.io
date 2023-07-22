@@ -28,7 +28,7 @@ body {
   background-image: url("images/bg3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  filter: grayscale(30%) saturate(1.2);
+  filter: grayscale(10%) saturate(1.2);
 }
 
 .fadein { animation: fadein 1s; }
