@@ -1,6 +1,6 @@
 body {
   background: rgb(220, 220, 255);
-  background-image: url("images/bg4.jpg");
+  background-image: url("images/mis.jpeg");
   background-size: cover;
   filter: grayscale(10%) saturate(1.2);
 }
