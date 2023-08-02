@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
-    <!-- <script src="../assets/js/color-modes.js"></script> -->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -11,257 +9,199 @@
 
     <title>maidq</title>
     <link rel="shortcut icon" href="images/man.jpg">
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-    <script src="preload.js"></script>
 
-  
-
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="projects.css" rel="stylesheet">
-
-    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-      </symbol>
-    </svg>
+        <header data-bs-theme="dark">
+          <div class="collapse" id="navbarHeader" style="background-image: url('images/banner.png'); background-size: cover;">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
 
-    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
-            Auto
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div> -->
+                  <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold py-1 px-0" href="index.html">About</a>
+                    <a class="nav-link fw-bold py-1 px-0 active" href="projects.html">Projects</a>
+                    <!-- <a class="nav-link fw-bold py-1 px-0" href="#">Other</a> -->
+                  </nav>
+                  <br>
+                  <br>
 
-    
-<header data-bs-theme="dark">
-  <div class="collapse" id="navbarHeader" style="background-image: url('images/bg3.jpg'); background-size: cover;">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
+                
+                </div>
+                <div class="col-md-4 offset-md-1 py-4" style="color:rgb(67, 57, 176);">
+                  <h4>Socials</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="https://github.com/bmai1" target="_blank" style="color:rgb(29, 14, 112);">GitHub</a></li>
+                    <li><a href="https://www.reddit.com/user/proxarius1" target="_blank" style="color:rgb(29, 14, 112);">Reddit</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCU5xiNz-QoM7PPi88WD5eyg" target="_blank" style="color:rgb(29, 14, 112);">Youtube</a></li>
+                    <li><a href="https://myanimelist.net/profile/proxarius" style="color:rgb(29, 14, 112);">MyAnimeList</a></li>
+                    <li><p style="color:rgb(9, 5, 33);">0hrs3g@gmail.com</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-dark shadow-sm" style="background-color: rgb(22, 18, 50);">
+            <div class="container">
+              <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="pink" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
+                <strong style="color:rgb(255, 149, 200);">maidq</strong>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </header>
 
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link fw-bold py-1 px-0" href="index.html">About</a>
-            <a class="nav-link fw-bold py-1 px-0 active" href="projects.html">Projects</a>
-            <!-- <a class="nav-link fw-bold py-1 px-0" href="#">Other</a> -->
-          </nav>
+        <main class="fadein">
           <br>
-          <br>
-
-          
-          <!-- <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p> -->
-        </div>
-        <div class="col-md-4 offset-md-1 py-4" style="color:rgb(118, 2, 58);">
-          <h4>Socials</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://github.com/bmai1" style="color:rgb(255, 212, 233);">GitHub</a></li>
-            <li><a href="https://www.reddit.com/user/proxarius1" style="color:rgb(255, 212, 233);">Reddit</a></li>
-            <li><a href="https://www.youtube.com/channel/UCU5xiNz-QoM7PPi88WD5eyg" style="color:rgb(255, 212, 233);">Youtube</a></li>
-            <li><p style="color:rgb(255, 212, 233);">0hrs3g@gmail.com</p></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark shadow-sm" style="background-color: rgb(22, 18, 50);">
-    <div class="container">
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="pink" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
-        <strong style="color:rgb(255, 149, 200);">maidq</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main class="fadein">
-  <br>
-  <section class="text-center container">
-    <div class="row">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h3 class="fw-light" style="color:rgb(136, 7, 93); font-weight:bolder;">projects</h1>
-        <p class="lead" style="color:rgb(60, 3, 59);">here are some things i've made. sites have no mobile support unfortunately, but i swear i'll do it maybe :3</p>
-        <!-- <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p> -->
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5" style="opacity: 1;">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <!-- fill="#7d001d"  -->
-              <!-- <rect width="100%" height="100%" style="opacity:0.6"/> -->
-              <image xlink:href="images/99v2.png" y="10" width="100%" height="95%"></image>
-            </svg>
-            <div class="card-body">
-              <p class="card-text"><strong>99-puzzle</strong> - This web application is a 15-puzzle parody with additional features such as different board sizes, best time storage, audio, and most importantly, an anime girl in the background.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-body-secondary"><a href="https://github.com/bmai1/99-puzzle" target="_blank">See Repo</a></small>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://bmai1.github.io/99-puzzle/')">Visit site</button>
-                </div> 
+          <section class="text-center container">
+            <div class="row">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h3 class="fw-light" style="color:rgb(136, 7, 93); font-weight:bolder;">projects</h1>
+                <p class="lead" style="color:rgb(60, 3, 59);">here are some things I've made. sites have no mobile support unfortunately, but I swear I'll do it maybe :3</p>
+                <!-- <p>
+                  <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                  <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p> -->
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <!-- fill="#52012d" -->
-              <!-- <rect width="100%" height="100%" style="opacity:0.6"/> -->
-              <image xlink:href="images/rie.png" y="7" width="100%" height="210"></image>
-            </svg>
-            <div class="card-body">
-              <p class="card-text"><strong>Riemann sum calculator</strong> - An application built with Electron and Javascript that is based on an iterative calculus technique to approximate the area of (under) a function. This calculator supports left, right, midpoint, and trapezoidal approximations.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <!-- <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div> -->
-                <small class="text-body-secondary"><a href="https://github.com/bmai1/electron-apps/tree/main/riemann" target="_blank">See Repo</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
+          </section>
 
+          <div class="album py-5" style="opacity: 1;">
+            <div class="container">
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <!-- fill="#24011c"  -->
-              <!-- <rect width="100%" height="100%" style="opacity:0.6;"/> -->
-              <image xlink:href="images/tsu.png" y="10" width="100%" height="95%"></image>
-            </svg>
-            <div class="card-body">
-              <p class="card-text"><strong>Tsumamonogatari</strong> - A terrible visual novel experience created with Ren'py and Python. In act one, you talk to your classmate and she invites you over to her house to celebrate her birthday.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-body-secondary"><a href="https://github.com/bmai1/tsu" target="_blank">See Repo</a></small>
-                <div class="btn-group">
-                  <a href="/Monogatari-1.0-dists/Monogatari-1.0-mac.zip" class="btn btn-sm btn-outline-secondary">Download for Mac</a>
-                  <a href="/Monogatari-1.0-dists/Monogatari-1.0-pc.zip" class="btn btn-sm btn-outline-secondary">Windows</a>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <!-- fill="#7d001d"  -->
+                      <!-- <rect width="100%" height="100%" style="opacity:0.6"/> -->
+                      <image xlink:href="images/99v2.png" y="10" width="100%" height="95%"></image>
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text"><strong>99-puzzle</strong> - This web application is a 15-puzzle parody with additional features such as different board sizes, best time storage, audio, and most importantly, an anime girl in the background.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-body-secondary"><a href="https://github.com/bmai1/99-puzzle" target="_blank">See Repo</a></small>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://bmai1.github.io/99-puzzle/')">Visit site</button>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <!-- fill="#4f53a2"  -->
-                <!-- <rect width="100%" height="100%" opacity="0.9"/> -->
-                <image xlink:href="images/encounter.png" y="10" width="100%" height="95%"></image>
-              </svg>
-              <div class="card-body">
-                <p class="card-text"><strong>Encounter</strong> - A command-line interactive novel originally written in Python concerning yet another blossoming high school relationship. Transferred to node as an executable, depending on inquiry.js to collect user input.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-body-secondary"><a href="https://github.com/bmai1/encounter" target="_blank">See Repo</a></small>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <!-- fill="#24011c"  -->
+                      <!-- <rect width="100%" height="100%" style="opacity:0.6;"/> -->
+                      <image xlink:href="images/tsu.png" y="10" width="100%" height="95%"></image>
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text"><strong>Tsumamonogatari</strong> - A terrible visual novel experience created with Ren'py and Python. In act one, you talk to your classmate and she invites you over to her house to celebrate her birthday.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-body-secondary"><a href="https://github.com/bmai1/tsu" target="_blank">See Repo</a></small>
+                        <div class="btn-group">
+                          <a href="/Monogatari-1.0-dists/Monogatari-1.0-mac.zip" class="btn btn-sm btn-outline-secondary">Download for Mac</a>
+                          <a href="/Monogatari-1.0-dists/Monogatari-1.0-pc.zip" class="btn btn-sm btn-outline-secondary">Windows</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <!-- fill="#3e2f63" -->
-                <!-- <rect width="100%" height="100%" opacity="0.7"/> -->
-                <image xlink:href="images/card.png" y="10" width="100%" height="95%"></image>
-              </svg>
-              <div class="card-body">
-                <p class="card-text"><strong>KWCS</strong> - A gacha simulator with randomized card rolling and animations. This was a practice application to try out new CSS and Javascript techniques.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-body-secondary"><a href="https://github.com/bmai1/waifu-cards" target="_blank">See Repo</a></small>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://bmai1.github.io/waifu-cards/')">Visit site</button>
-                  </div> 
+                <div class="col">
+                  <div class="card shadow-sm">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <!-- fill="#4f53a2"  -->
+                        <!-- <rect width="100%" height="100%" opacity="0.9"/> -->
+                        <image xlink:href="images/encounter.png" y="10" width="100%" height="95%"></image>
+                      </svg>
+                      <div class="card-body">
+                        <p class="card-text"><strong>Encounter</strong> - A command-line interactive novel originally written in Python concerning yet another blossoming high school relationship. Transferred to node as an executable, depending on inquiry.js to collect user input.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-body-secondary"><a href="https://github.com/bmai1/encounter" target="_blank">See Repo</a></small>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-              </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <!-- fill="#24011c"  -->
+                      <!-- <rect width="100%" height="100%" style="opacity:0.6;"/> -->
+                      <image xlink:href="images/e2m3c.png" y="10" width="100%" height="95%"></image>
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text"><strong>e2m3c</strong> - Electron app running pytube to convert YouTube urls to mp3 files. Built solely for individual use because I am lazy and it downloads faster than other sites into organized local directories.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <!-- <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div> -->
+                        <small class="text-body-secondary"><a href="https://github.com/bmai1/e2m3c" target="_blank">See Repo</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                      <!-- fill="#52012d" -->
+                      <!-- <rect width="100%" height="100%" style="opacity:0.6"/> -->
+                      <image xlink:href="images/rie.png" y="7" width="100%" height="210"></image>
+                    </svg>
+                    <div class="card-body">
+                      <p class="card-text"><strong>Riemann sum calculator</strong> - An application built with Electron and Javascript that is based on an iterative calculus technique to approximate the area of (under) a function. This calculator supports left, right, midpoint, and trapezoidal approximations.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <!-- <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div> -->
+                        <small class="text-body-secondary"><a href="https://github.com/bmai1/electron-apps/tree/main/riemann" target="_blank">See Repo</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <!-- fill="#3e2f63" -->
+                        <!-- <rect width="100%" height="100%" opacity="0.7"/> -->
+                        <image xlink:href="images/card.png" y="10" width="100%" height="95%"></image>
+                      </svg>
+                      <div class="card-body">
+                        <p class="card-text"><strong>KWCS</strong> - A gacha simulator with randomized card rolling and animations. This was a practice application to try out new CSS and Javascript techniques.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-body-secondary"><a href="https://github.com/bmai1/waifu-cards" target="_blank">See Repo</a></small>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://bmai1.github.io/waifu-cards/')">Visit site</button>
+                          </div> 
+                        </div>
+                      </div>
+                  </div>
+                </div>
+        </main>
+
+        <footer class="text-body-secondary py-5">
+          <div class="container">
+            <!-- <p class="float-end mb-1">
+              <a href="#">Back to top</a>
+            </p> -->
+            <!-- <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p> -->
           </div>
-        </div>
+        </footer>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <!-- fill="#24011c"  -->
-              <!-- <rect width="100%" height="100%" style="opacity:0.6;"/> -->
-              <image xlink:href="images/e2m3c.png" y="10" width="100%" height="95%"></image>
-            </svg>
-            <div class="card-body">
-              <p class="card-text"><strong>e2m3c</strong> - Electron app running pytube to convert YouTube urls to mp3 files. Built solely for individual use because I am lazy and it downloads faster than other sites into organized local directories.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <!-- <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div> -->
-                <small class="text-body-secondary"><a href="https://github.com/bmai1/e2m3c" target="_blank">See Repo</a></small>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-</main>
-
-<footer class="text-body-secondary py-5">
-  <div class="container">
-    <!-- <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p> -->
-    <!-- <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p> -->
-  </div>
-</footer>
-<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="preload.js"></script>
+  </body>
 </html>

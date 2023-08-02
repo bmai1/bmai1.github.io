@@ -1,6 +1,6 @@
 body {
   background: rgb(220, 220, 255);
-  background-image: url("images/mis.jpeg");
+  background-image: url("images/mis1.jpg");
   background-size: cover;
   filter: grayscale(10%) saturate(1.2);
 }
@@ -90,8 +90,8 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  color: #630b38;
-  border-bottom-color: #7e3551;
+  color: #b35786;
+  border-bottom-color: #d892ac;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -99,6 +99,6 @@ body {
 }
 
 .nav-masthead .active {
-  color: #9f1a5f;
-  border-bottom-color: #971c4b;
+  color: #6d0735;
+  border-bottom-color: #7c0b35;
 }
