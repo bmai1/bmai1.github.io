@@ -87,7 +87,7 @@ body {
   }
 
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, 0.868);
+  color: rgba(160, 51, 118, 0.868);
   border-bottom: .25rem solid transparent;
 }
 
@@ -104,4 +104,13 @@ body {
 .nav-masthead .active {
   color: #6d0735;
   border-bottom-color: #7c0b35;
+}
+
+a {
+  color: rgb(73, 7, 59);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: rgb(244, 142, 218);
 }
