@@ -63,7 +63,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  color: #ea55a2;
+  color: #ffaad6;
   border-bottom-color: #7e3551;
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 .nav-masthead .active {
-  color: rgb(254, 146, 221);
+  color: rgb(131, 27, 99);
   border-bottom-color: #971c4b;
 }
 
@@ -107,6 +107,7 @@ body {
   height: 700px;
   opacity: 0;
   transition: opacity 1s ease-out;
+  user-select: none;
   
 }
 #honey2 {
@@ -118,6 +119,7 @@ body {
   height: 730px;
   opacity: 0;
   transition: opacity 1s ease-out;
+  user-select: none;
 }
 
 .grow-on-hover {
