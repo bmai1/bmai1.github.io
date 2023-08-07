@@ -185,3 +185,9 @@ a {
   background-color: rgba(52, 7, 29, 0.5);
   border-radius: 20px;
 }
+
+.fadein { animation: fadein 1s; }
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
