@@ -1,6 +1,6 @@
 body {
   background: rgb(220, 220, 255);
-  background-image: url("images/mis4.jpg");
+  background-image: url("../images/mis4.jpg");
   background-size: cover;
   /* background-size: 120%, 100%;
   background-position: top, bottom; */
