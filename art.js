@@ -3,7 +3,7 @@ let viewerActive = false;
 const openViewer = (image) => {
     if (!viewerActive) {
         viewer.style.display = "block";
-        viewer.innerHTML = `<img class="fadein" src="images/${image}" style="display: block; height: 100%; margin: auto;">`;
+        viewer.innerHTML = `<img class="fadein" src="images/${image}" style="display: block; height: 95%; margin: auto;">`;
         viewerActive = true;
     }
 }
