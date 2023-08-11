@@ -163,27 +163,6 @@ a {
   margin-left: 40px;
 }
 
-#maidq {
-  text-decoration: none;
-  color:rgb(255, 149, 200);
-  font-weight: bold;
-  font-size: 22px;
-
-}
-/* 
-#liyue {
-  opacity: 0.8;
-}
-
-#ting {
-  opacity: 0.8;
-}
-
-#wick {
-  opacity: 0.8;
-} */
-
-
 .grow {
   transition: transform 0.5s ease;
 }
@@ -212,4 +191,15 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: rgb(0, 0, 0, 0.8);
+}
+
+.maidq-text {
+  text-decoration: none;
+  color:rgb(255, 149, 200);
+  font-weight: bold;
+  font-size: 22px;
+  transition: color 4s ease;
+}
+.maidq-text:hover {
+  color: rgb(255, 38, 194);
 }

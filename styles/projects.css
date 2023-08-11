@@ -114,3 +114,12 @@ a {
 a:hover {
   color: rgb(244, 142, 218);
 }
+
+.maidq-text {
+  color:rgb(255, 149, 200);
+  font-size: 24px;
+  transition: color 4s ease;
+}
+.maidq-text:hover {
+  color: rgb(255, 38, 194);
+}
