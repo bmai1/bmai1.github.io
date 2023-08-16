@@ -167,7 +167,7 @@ body {
   position: absolute;
   padding-left: 15px;
   border-radius: 5px;
-  background-color: rgb(131, 27, 99, 0.1);
+  /* background-color: rgb(131, 27, 99, 0.1); */
   width: 100px;
   height: 30px;
 }
