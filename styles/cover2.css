@@ -89,7 +89,7 @@ body {
     align-items: center;
     position: fixed;
     bottom: -100%; /* Initially hide the div below the viewport */
-    background-color: #1e1e1e;
+    background-color: #5d3140;
     opacity: 0;
     transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
     color: rgb(255, 235, 235);
