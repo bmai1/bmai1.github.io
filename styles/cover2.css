@@ -17,10 +17,11 @@ body {
     width: 90vw;;
 }
 .skyset {
-    z-index: -1;
+    opacity: 0;
+    z-index: 5;
     position: absolute;
     background-color: pink;
-    height: 100vh;
+    height: 250vh;
     width: 90vw;;
 }
 
@@ -30,7 +31,8 @@ body {
     width: 90vw;
     z-index: 0;
     background-image: url("../images/sun.png");
-    background-size: cover
+    background-size: cover;
+    transition: transform 0.3s ease-out;
 }
 
 .mountains {

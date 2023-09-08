@@ -12,6 +12,9 @@ window.addEventListener('scroll', () => {
 
   // document.querySelector('.sky').style.filter = `brightness(calc(100% - ${parallax * 0.7}%))`;
   document.querySelector('.sky').style.opacity = `calc(100% - ${parallax * 0.7}%)`;
+  document.querySelector('.skyset').style.opacity = `${parallax * 0.3}%`;
+
+  
   document.querySelector('.sun').style.transform = `translateY(${parallax * 7}px)`;
   document.querySelector('.sun').style.filter = `saturate(calc(100% + ${parallax * 7}%))`;
   
