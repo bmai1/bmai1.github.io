@@ -14,6 +14,13 @@ body {
     height: 100vh;
     width: 90vw;;
 }
+.skyset {
+    z-index: -1;
+    position: absolute;
+    background-color: pink;
+    height: 100vh;
+    width: 90vw;;
+}
 
 .sun {
     position: absolute;
@@ -93,7 +100,7 @@ body {
 
 .cover {
     z-index: 12;
-    height: 25vh;
+    max-height: 20vh;
     max-width: 24vw;
     padding: 1vw;
 }
@@ -155,7 +162,7 @@ body {
 
 @media only screen and (max-width: 800px) {
     .text-container {
-        width: 70%;
+        width: 72%;
     }
 }
 
@@ -193,8 +200,16 @@ footer {
 }
 
 #down {
-    bottom: 50px;
-    position: absolute;
-    z-index: 99;
+    margin-top: -20px;
     height: 70px;
+}
+
+.down-cnt {
+    color: pink;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    z-index: 20;
 }

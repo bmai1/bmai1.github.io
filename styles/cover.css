@@ -33,7 +33,7 @@ body {
   /* filter: brightness(110%) grayscale(10%) saturate(0.9); */
 }
 #overlay {
-  background-color: rgb(253, 205, 219, 0.2);
+  background-color: rgb(253, 205, 219, 0.3);
   z-index: 10;
   height: 250vh;
   width: 100vw;
