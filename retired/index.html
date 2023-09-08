@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>maidq</title>
+      <link rel="shortcut icon" href="images/madoka.png">
+      <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="styles/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="styles/cover.css" rel="stylesheet">
+
+  </head>
+  <body class="d-flex h-100 text-center">
+      <div id="overlay"></div>
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+          <header class="mb-auto">
+            <div>
+              <div class="rotate-container">
+                <h3 class="float-md-start mb-0 maidq-text">maidq</h3>
+                
+              </div>
+              <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">About</a>
+                <a class="nav-link fw-bold py-1 px-0" href="projects.html">Projects</a>
+                <a class="nav-link fw-bold py-1 px-0" href="art.html">Art</a>
+              </nav>
+            </div>
+          </header>
+
+          <img id="honey" src="images/sengoku.png">
+          <img id="honey2" src="images/senjo.png">
+          <main id="oldDiv" class="px-5 fadein  grow-on-hover">
+            <div class="typewriter">
+              <h3 class="typewriter-text" style="color:rgb(202, 53, 150);">hey buddy...</h3>
+            </div>
+            <p id="desc" class="lead" style="color:rgb(43, 1, 22);">
+              My name's Mai D. Quang, but most people know me as Brian. I'm a high school student from California and a hobbyist programmer with a focus on web dev and competitive programming. I'm terminally online and kind of a weeb, but I swear it's ironic; I'm not that obsessed with cartoon women to be honest. Besides coding whenever I can, I also enjoy reading, writing, and drawing. Unfortunately, I'm really bad at making time for those. Three Days of Happiness by Sugaru Miaki is peak teenage angst material, by the way.</p>
+            <p class="lead">
+              <a onclick="replaceDivWithContent()" class="btn btn-lg btn-light fw-bold">read more</a>
+            </p>
+          </main>
+
+          <footer class="mt-auto text-black-50">
+            <p>&copy; not copyrighted.</p>
+            <!-- <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p> -->
+          </footer>
+      </div>
+
+      <script src="styles/assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+          isVisible = true;
+          var originalDiv = null; // Store the original div
+
+          function replaceDivWithContent() {
+            const images = document.querySelectorAll("img");
+            images.forEach((image) => {
+              if (isVisible) {
+                image.style.opacity = 0;
+              }
+              else {
+                image.style.opacity = 0.95;
+              }
+            });
+            isVisible = isVisible ? false : true;
+            
+            const oldDiv = document.getElementById('oldDiv');
+            if (originalDiv === null) {
+              originalDiv = oldDiv.cloneNode(true); // Store a clone of the original div
+              oldDiv.innerHTML = ''; // Clear the div content
+              oldDiv.style.backgroundColor = "rgba(8, 5, 35, 0.5)";
+            } else {
+              oldDiv.parentNode.replaceChild(originalDiv, oldDiv); // Replace with the original div
+              originalDiv = null; // Reset the original div
+              return;
+            }
+
+            // AJAX request or any other method to fetch new content
+            fetch('templates/more.html')
+              .then(response => response.text())
+              .then(data => {
+                oldDiv.innerHTML = data; // Set the new content
+              })
+              .catch(error => {
+                console.log('An error occurred:', error);
+              });
+          }
+      </script>
+      <script src="preload.js"></script>
+      <script src="onload.js"></script>
+  </body>
+</html>

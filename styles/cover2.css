@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 250vh; /* Create enough scrollable content */
+    font-family: 'Space Grotesk';
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+}
+
+.sky {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    width: 90vw;;
+}
+
+.mountains {
+    position: absolute;
+    height: 100vh;
+    width: 90vw;;
+    background-size: cover
+}
+
+.layer1 {
+    z-index: 0;
+    background-image: url("../images/layer1.png");
+}
+.layer2 {
+    z-index: 2;
+    background-image: url("../images/layer2.png");
+}
+.layer3 {
+    z-index: 4;
+    background-image: url("../images/layer3.png");
+}
+.layer4 {
+    z-index: 6;
+    background-image: url("../images/layer4.png");
+}
+
+.gray {
+    z-index: 6;
+    transform: translateY(200%);
+    position: absolute;
+    height: 120vh;
+    width: 95vw;;
+    background-color: #212121;
+}
+
+.gray-cover {
+    z-index: 6;
+    transform: translateY(150%);
+    position: absolute;
+    height: 250vh;
+    width: 95vw;;
+    background-color: #212121;
+}
+
+.welcome {
+    z-index: 1;
+    transition: opacity 3s ease;
+}
+
+.scroll-div1 {
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -100%; /* Initially hide the div below the viewport */
+    background-color: #1e1e1e;
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
+    color: rgb(255, 235, 235);
+}
+
+.scroll-div1.active {
+    bottom: 0; /* Move the div to the center when active */
+    opacity: 1;
+}
+
+.scroll-div2 {
+    z-index: 11;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -100%; /* Initially hide the div below the viewport */
+    background-color: rgb(252, 244, 12);
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
+    color: rgb(255, 235, 235);
+}
+
+.scroll-div2.active {
+    bottom: 0; /* Move the div to the center when active */
+    opacity: 1;
+}
+
+.text-container {
+    width: 35%;
+}
+
+@media only screen and (max-width: 800px) {
+    .text-container {
+        width: 70%;
+    }
+}
+
+.nv-cnt {
+    position: absolute;
+}
+
+#cum {
+    width: 400px;
+    height: 300px;
+}
+
+.meme {
+    font-size: 30px;
+    font-family: Impact, sans-serif;
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 black,
+    1.5px -1.5px 0 black,
+    -1.5px 1.5px 0 black,
+    1.5px 1.5px 0 black;
+}
+
+@media only screen and (max-width: 800px) {
+    #cum {
+        width: 150px;
+    }
+    .meme {
+        font-size: 25px;
+    }
+}
