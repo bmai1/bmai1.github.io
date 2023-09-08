@@ -79,7 +79,7 @@ body {
 /* ----------------------------------------------- */
 
 #oldDiv {
-  background-color: rgba(8, 5, 35, 0.5);
+  background-color: rgba(8, 5, 35, 0);
   border-radius: 20px;
   padding: 2em
   /* transition: width 0.5s ease-in; */
@@ -129,7 +129,7 @@ body {
   transform: scale(1.02); /* Scale the element on hover */
 }
 
-@keyframes rainbowAnimation {
+/* @keyframes rainbowAnimation {
       0%   { color: #FFA7D1; }      
       28%  { color: #FFDCCF; }
       42%  { color: #FFFACD; }
@@ -137,6 +137,16 @@ body {
       71%  { color: #B2FFFF; }
       85%  { color: #CDCCFF; }
       100% { color: #FFA7D1; }                
+} */
+
+@keyframes rainbowAnimation {
+  0%   { color: #FF6792; }
+  28%  { color: #FFA287; }
+  42%  { color: #FFD781; }
+  57%  { color: #A8FF6D; }
+  71%  { color: #75FFFF; }
+  85%  { color: #938FFF; }
+  100% { color: #FF6792; }
 }
 
 .rainbow-text {
@@ -145,7 +155,9 @@ body {
 
 .rotating-text {
   color: rgb(173, 65, 141);
-  font-size: 24px;
+  padding-top: 3px;
+  padding-right: 50px;
+  font-size: 20px;
   font-weight: bold;
   transform-style: preserve-3d;
   transform-origin: center;
