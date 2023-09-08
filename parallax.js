@@ -1,5 +1,6 @@
 const sd1 = document.querySelector('.scroll-div1');
 const sd2 = document.querySelector('.scroll-div2');
+const sd3 = document.querySelector('.scroll-div3');
 const welcomeDiv = document.querySelector('.welcome');
 
 
@@ -22,17 +23,27 @@ window.addEventListener('scroll', () => {
 
 
   if (scrollPosition >= window.innerHeight * 0.5 && scrollPosition < window.innerHeight * 2.5) {
-    sd2.classList.remove('active');
     sd1.classList.add('active');
+    sd2.classList.remove('active');
+    sd3.classList.remove('active');
     welcomeDiv.style.opacity = 0;
   } 
-  else if (scrollPosition >= window.innerHeight * 2.5) {
+  else if (scrollPosition >= window.innerHeight * 2.5 && scrollPosition < window.innerHeight * 5) {
     sd1.classList.remove('active');
     sd2.classList.add('active');
+    sd3.classList.remove('active');
+  }
+  else if (scrollPosition >= window.innerHeight * 5) {
+    sd1.classList.remove('active');
+    sd2.classList.remove('active');
+    sd3.classList.add('active');
+
+
   }
   else {
     sd1.classList.remove('active');
     sd2.classList.remove('active');
+    sd3.classList.remove('active');
     welcomeDiv.style.opacity = 1; // Reset the welcome div's opacity
   }
 });

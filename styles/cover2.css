@@ -43,7 +43,7 @@ body {
     z-index: 6;
     transform: translateY(200%);
     position: absolute;
-    height: 120vh;
+    height: 250vh;
     width: 95vw;;
     background-color: #212121;
 }
@@ -82,8 +82,45 @@ body {
     opacity: 1;
 }
 
+.cover {
+    z-index: 12;
+    height: 25vh;
+    max-width: 24vw;
+    padding: 1vw;
+}
+
+.stack {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    justify-content: center;
+    align-items: center;
+}
+.stack-row {
+    /* display: flex; */
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
 .scroll-div2 {
     z-index: 11;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: -100%; /* Initially hide the div below the viewport */
+    background-color: rgb(39, 37, 48);
+    opacity: 1;
+    transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
+    color: rgb(255, 235, 235);
+}
+
+.scroll-div2.active {
+    bottom: 0; /* Move the div to the center when active */
+    opacity: 1;
+}
+
+.scroll-div3 {
+    z-index: 12;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -98,7 +135,7 @@ body {
     color: rgb(255, 235, 235);
 }
 
-.scroll-div2.active {
+.scroll-div3.active {
     bottom: 0; /* Move the div to the center when active */
     opacity: 1;
 }
@@ -134,9 +171,6 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-    #cum {
-        width: 150px;
-    }
     .meme {
         font-size: 25px;
     }
