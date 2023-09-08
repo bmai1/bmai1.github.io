@@ -108,7 +108,7 @@ body {
     height: 100vh;
     position: fixed;
     bottom: -100%; /* Initially hide the div below the viewport */
-    background-color: rgb(39, 37, 48);
+    background-color: rgb(29, 28, 34);
     opacity: 1;
     transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
     color: rgb(255, 235, 235);
@@ -129,7 +129,7 @@ body {
     align-items: center;
     position: fixed;
     bottom: -100%; /* Initially hide the div below the viewport */
-    background-color: rgb(252, 244, 12);
+    background-color: rgb(17, 17, 17);
     opacity: 0;
     transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
     color: rgb(255, 235, 235);
@@ -181,4 +181,11 @@ footer {
     position: fixed;
     bottom: 5px;
     z-index: 99;
+}
+
+#down {
+    bottom: 50px;
+    position: absolute;
+    z-index: 99;
+    height: 70px;
 }
