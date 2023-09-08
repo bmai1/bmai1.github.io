@@ -37,8 +37,6 @@ window.addEventListener('scroll', () => {
     sd1.classList.remove('active');
     sd2.classList.remove('active');
     sd3.classList.add('active');
-
-
   }
   else {
     sd1.classList.remove('active');
