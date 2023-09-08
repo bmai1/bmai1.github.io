@@ -100,6 +100,27 @@ body {
     opacity: 1;
 }
 
+.dt-left, .dt-right {
+    display: flex;
+    background-color: rgb(255, 255, 255, 0.5);
+    height: 100vh;
+    width: 30vw;
+    position: absolute;
+}
+.dt-left {
+    left: 0px;
+}
+.dt-right {
+    right: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+    .dt-left, .dt-right {
+        display: none;
+    }
+}
+
+
 .cover {
     z-index: 12;
     max-height: 20vh;
@@ -135,6 +156,18 @@ body {
 .scroll-div2.active {
     bottom: 0; /* Move the div to the center when active */
     opacity: 1;
+}
+
+.homu {
+    background-image: url("../images/homura.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.mado {
+    background-image: url("../images/madoka.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .scroll-div3 {
