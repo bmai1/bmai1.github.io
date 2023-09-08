@@ -34,13 +34,13 @@ window.addEventListener('scroll', () => {
     sd1.classList.add('active');
     sd2.classList.remove('active');
     sd3.classList.remove('active');
-    document.querySelector('.sun').style.display = "none";
     welcomeDiv.style.opacity = 0;
   } 
   else if (scrollPosition >= window.innerHeight * 2.5 && scrollPosition < window.innerHeight * 5) {
     sd1.classList.remove('active');
     sd2.classList.add('active');
     sd3.classList.remove('active');
+    document.querySelector('.sun').style.display = "none";
   }
   else if (scrollPosition >= window.innerHeight * 5) {
     sd1.classList.remove('active');
