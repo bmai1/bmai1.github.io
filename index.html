@@ -32,7 +32,9 @@
           <img id="honey" src="images/sengoku.png">
           <img id="honey2" src="images/senjo.png">
           <main id="oldDiv" class="px-5 fadein  grow-on-hover">
-            <h3 style="color:rgb(117, 35, 88);">hey buddy,</h3>
+            <div class="typewriter">
+              <h3 class="typewriter-text" style="color:rgb(202, 53, 150);">hey buddy...</h3>
+            </div>
             <p id="desc" class="lead" style="color:rgb(43, 1, 22);">
               My name's Mai D. Quang, but most people know me as Brian. I'm a high school student from California and a hobbyist programmer with a focus on web dev and competitive programming. I'm terminally online and kind of a weeb, but I swear it's ironic; I'm not that obsessed with cartoon women to be honest. Besides coding whenever I can, I also enjoy reading, writing, and drawing. Unfortunately, I'm really bad at making time for those. Three Days of Happiness by Sugaru Miaki is peak teenage angst material, by the way.</p>
             <p class="lead">
@@ -67,6 +69,7 @@
             if (originalDiv === null) {
               originalDiv = oldDiv.cloneNode(true); // Store a clone of the original div
               oldDiv.innerHTML = ''; // Clear the div content
+              oldDiv.style.backgroundColor = "rgba(8, 5, 35, 0.5)";
             } else {
               oldDiv.parentNode.replaceChild(originalDiv, oldDiv); // Replace with the original div
               originalDiv = null; // Reset the original div

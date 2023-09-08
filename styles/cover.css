@@ -81,8 +81,7 @@ body {
 #oldDiv {
   background-color: rgba(8, 5, 35, 0);
   border-radius: 20px;
-  padding: 2em
-  /* transition: width 0.5s ease-in; */
+  padding: 2em;
 }
 
 #desc {
@@ -196,4 +195,27 @@ body {
 }
 .maidq-text:hover {
   color:rgb(255, 149, 200);
+}
+
+.typewriter {
+  display: inline-block;
+}
+.typewriter-text {
+  letter-spacing: 1px;
+  font-family: 'Space Grotesk';
+  border-right: 3px solid rgb(46, 7, 42);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 3s,
+    cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% { border-color: transparent; }
+}
+
+@keyframes typing {
+  from { width: 0 }
 }
