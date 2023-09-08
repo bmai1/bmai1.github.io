@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
    // Calculate the parallax effect for each layer
   const parallax = scrollPosition * 0.2;
 
-  document.querySelector('.layer1').style.transform = `translateY(${parallax * 4}px)`;
+  document.querySelector('.layer1').style.transform = `translateY(${parallax * 3}px)`;
   document.querySelector('.layer2').style.transform = `translateY(${parallax * 1.3}px)`;
   document.querySelector('.layer3').style.transform = `translateY(${parallax * 2}px)`;
   document.querySelector('.layer4').style.transform = `translateY(${parallax * 1}px)`;
