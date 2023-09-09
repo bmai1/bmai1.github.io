@@ -300,4 +300,7 @@ footer {
     #player {
         display: none;
     }
+    #pain {
+        display: none;
+    }
 }
