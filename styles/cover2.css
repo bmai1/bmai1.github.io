@@ -110,7 +110,7 @@ body {
 
 .dt-left, .dt-right {
     display: flex;
-    background-color: rgba(246, 231, 255, 0.4);
+    background-color: rgba(246, 231, 255, 0.6);
     height: 100vh;
     width: 30vw;
     position: absolute;
@@ -271,7 +271,7 @@ footer {
 
 #player {
     z-index: 15;
-    width: 20vw;
+    width: 20.6vw;
     position: absolute;
     left: 7vw;
     top: 25vh;
