@@ -33,11 +33,12 @@ body {
   /* filter: brightness(110%) grayscale(10%) saturate(0.9); */
 }
 #overlay {
-  background-color: rgb(253, 205, 219, 0.25);
+  background-color: rgb(253, 205, 219, 0.35);
   z-index: 10;
   height: 250vh;
   width: 100vw;
   position: absolute;
+  pointer-events: none;
 }
 
 .fadein { animation: fadein 1s; }
@@ -140,6 +141,15 @@ body {
 
 .rainbow-text {
   animation: rainbowAnimation 10s infinite linear; 
+}
+
+.pear-text {
+  animation: pearAnimation 10s infinite ease; 
+}
+@keyframes pearAnimation {
+  0%   { color: #1d221b; }
+  50%  { color: #262c22; }
+  100% { color: #1d221b; }
 }
 
 .rotating-text {

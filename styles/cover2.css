@@ -18,7 +18,7 @@ body {
 }
 .sky2 {
     position: absolute;
-    background-color: rgb(255, 227, 227);
+    background-color: rgb(150, 195, 136);
     height: 100vh;
     width: 90vw;
 }
@@ -108,6 +108,15 @@ body {
     opacity: 1;
 }
 
+#overlay1 {
+    background-color: rgb(253, 205, 219, 0.2);
+    z-index: 12;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    pointer-events: none;
+}
+
 .dt-left, .dt-right {
     display: flex;
     background-color: rgba(246, 231, 255, 0.6);
@@ -148,15 +157,15 @@ body {
     width: 100%;
     height: 100vh;
     position: fixed;
-    bottom: -100%; /* Initially hide the div below the viewport */
+    bottom: -100%; 
     background-color: rgb(38, 36, 50);
     opacity: 1;
-    transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
+    transition: opacity 0.5s, bottom 0.75s; 
     color: rgb(255, 235, 235);
 }
 
 .scroll-div2.active {
-    bottom: 0; /* Move the div to the center when active */
+    bottom: 0; 
     opacity: 1;
 }
 
@@ -170,6 +179,15 @@ body {
     background-image: url("../images/madoka.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#overlay2 {
+    background-color: rgb(253, 205, 219, 0.2);
+    z-index: 12;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    pointer-events: none;
 }
 
 .scroll-div3 {
@@ -187,6 +205,14 @@ body {
 .scroll-div3.active {
     bottom: 0; /* Move the div to the center when active */
     opacity: 1;
+}
+#overlay3 {
+    background-color: rgb(253, 205, 219, 0.15);
+    z-index: 12;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    pointer-events: none;
 }
 
 .end-div {
@@ -287,6 +313,13 @@ footer {
     filter: brightness(105%);
     opacity: 0.9;
 }
+.goodbye {
+    margin-top: 275px; 
+    color:black; 
+    z-index: 99;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 800px) {
     .dt-left, .dt-right {
         display: none;
