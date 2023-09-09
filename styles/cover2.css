@@ -122,13 +122,6 @@ body {
     right: 0px;
 }
 
-@media only screen and (max-width: 800px) {
-    .dt-left, .dt-right {
-        display: none;
-    }
-}
-
-
 .cover {
     border: 1px solid pink;
     z-index: 12;
@@ -220,12 +213,6 @@ body {
     width: 35%;
 }
 
-@media only screen and (max-width: 800px) {
-    .text-container {
-        width: 72%;
-    }
-}
-
 .nv-cnt {
     position: absolute;
 }
@@ -244,12 +231,6 @@ body {
     1.5px -1.5px 0 black,
     -1.5px 1.5px 0 black,
     1.5px 1.5px 0 black;
-}
-
-@media only screen and (max-width: 800px) {
-    .meme {
-        font-size: 25px;
-    }
 }
 
 footer {
@@ -286,4 +267,17 @@ footer {
 }
 .p-text:hover {
     color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .dt-left, .dt-right {
+        display: none;
+    }
+    .text-container {
+        font-size: 13px;
+        width: 72%;
+    }
+    .meme {
+        font-size: 25px;
+    }
 }
