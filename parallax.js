@@ -1,6 +1,7 @@
 const sd1 = document.querySelector('.scroll-div1');
 const sd2 = document.querySelector('.scroll-div2');
 const sd3 = document.querySelector('.scroll-div3');
+const ed  = document.querySelector('.end-div');
 const welcomeDiv = document.querySelector('.welcome');
 
 
@@ -34,24 +35,34 @@ window.addEventListener('scroll', () => {
     sd1.classList.add('active');
     sd2.classList.remove('active');
     sd3.classList.remove('active');
+    ed.classList.remove('active');
     welcomeDiv.style.opacity = 0;
   } 
-  else if (scrollPosition >= window.innerHeight * 2.5 && scrollPosition < window.innerHeight * 5) {
+  else if (scrollPosition >= window.innerHeight * 2.5 && scrollPosition < window.innerHeight * 4) {
     sd1.classList.remove('active');
     sd2.classList.add('active');
     sd3.classList.remove('active');
+    ed.classList.remove('active');
     document.querySelector('.sun').style.display = "none";
+  }
+  else if (scrollPosition >= window.innerHeight * 4 && scrollPosition < window.innerHeight * 5) {
+    sd1.classList.remove('active');
+    sd2.classList.remove('active');
+    sd3.classList.add('active');
+    ed.classList.remove('active');
   }
   else if (scrollPosition >= window.innerHeight * 5) {
     sd1.classList.remove('active');
     sd2.classList.remove('active');
-    sd3.classList.add('active');
+    sd3.classList.remove('active');
+    ed.classList.add('active');
   }
   else {
     document.querySelector('.sun').style.display = "block";
     sd1.classList.remove('active');
     sd2.classList.remove('active');
     sd3.classList.remove('active');
+    ed.classList.remove('active');
     welcomeDiv.style.opacity = 1; // Reset the welcome div's opacity
   }
 });
