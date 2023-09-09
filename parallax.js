@@ -12,6 +12,7 @@ window.addEventListener('scroll', () => {
   const parallax = scrollPosition * 0.2;
 
   // document.querySelector('.sky').style.filter = `brightness(calc(100% - ${parallax * 0.7}%))`;
+  document.querySelector('.abt-me').style.opacity = `calc(100% - ${parallax * 1.8}%)`;
   document.querySelector('.sky').style.opacity = `calc(100% - ${parallax * 0.2}%)`;
   document.querySelector('.skyset').style.opacity = `${parallax * 0.3}%`;
 

@@ -144,12 +144,17 @@ body {
 }
 
 .pear-text {
-  animation: pearAnimation 10s infinite ease; 
+  /* animation: pearAnimation 10s infinite ease;  */
+  color: #1d221b;
+  transition: color 0.7s ease;
 }
 @keyframes pearAnimation {
   0%   { color: #1d221b; }
   50%  { color: #262c22; }
   100% { color: #1d221b; }
+}
+.pear-text:hover {
+  color: #35492d;
 }
 
 .rotating-text {

@@ -1,4 +1,4 @@
-* { cursor: url("../images/cursor.png"), auto; }
+/* * { cursor: url("../images/cursor.png"), auto; } */
 
 body {
     margin: 0;
@@ -291,6 +291,12 @@ footer {
     color: pink;
     transition: color 0.2s ease;
 }
+
+i.p-text {
+    font-size: 22px;
+    margin: 5px;
+}
+
 .p-text:hover {
     color: white;
 }
