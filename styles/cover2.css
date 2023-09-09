@@ -271,17 +271,18 @@ footer {
 
 #player {
     z-index: 15;
-    width: 24vw;
+    width: 20vw;
     position: absolute;
-    left: 10vw;
-    top: 10vh;
+    left: 7vw;
+    top: 25vh;
+
 }
 #pain {
     z-index: 15;
-    width: 24vw;
+    width: 21vw;
     position: absolute;
-    right: 8vw;
-    top: 10vh;
+    right: 7vw;
+    top: 27vh;
     border-radius: 10px;
     filter: brightness(105%);
     opacity: 0.9;
