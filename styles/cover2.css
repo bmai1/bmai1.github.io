@@ -38,7 +38,7 @@ body {
     z-index: 0;
     background-image: url("../images/sun.png");
     background-size: cover;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.23s ease-out;
 }
 
 .mountains {
@@ -110,7 +110,7 @@ body {
 
 .dt-left, .dt-right {
     display: flex;
-    background-color: rgba(27, 13, 36, 0.5);
+    background-color: rgba(246, 231, 255, 0.4);
     height: 100vh;
     width: 30vw;
     position: absolute;
@@ -130,10 +130,11 @@ body {
 
 
 .cover {
+    border: 1px solid pink;
     z-index: 12;
     max-height: 20vh;
     max-width: 24vw;
-    padding: 1vw;
+    /* padding: 1vw; */
 }
 
 .stack {
@@ -155,7 +156,7 @@ body {
     height: 100vh;
     position: fixed;
     bottom: -100%; /* Initially hide the div below the viewport */
-    background-color: rgb(52, 50, 66);
+    background-color: rgb(38, 36, 50);
     opacity: 1;
     transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
     color: rgb(255, 235, 235);
@@ -271,4 +272,18 @@ footer {
     bottom: 50px;
     display: flex;
     z-index: 20;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+.down-cnt:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.p-text {
+    text-decoration: none;
+    color: pink;
+    transition: color 0.2s ease;
+}
+.p-text:hover {
+    color: white;
 }
