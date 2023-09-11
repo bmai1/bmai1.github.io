@@ -134,14 +134,14 @@ body {
 
 .cover {
     border: 1px solid pink;
+    border-radius: 4px;
     z-index: 12;
-    max-height: 20vh;
-    max-width: 24vw;
+    max-height: 17vh;
     /* padding: 1vw; */
 }
 
 .stack {
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column; /* Stack rows vertically */
     justify-content: center;
