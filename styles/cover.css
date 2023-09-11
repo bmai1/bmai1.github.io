@@ -103,7 +103,7 @@ body {
   position: absolute;
   right: -90px;
   bottom: 0%;
-  height: 700px;
+  height: 100vh;
   opacity: 0;
   transition: opacity 1s ease-out;
   user-select: none;
@@ -115,7 +115,7 @@ body {
   position: absolute;
   left: -50px;
   bottom: 0%;
-  height: 730px;
+  height: 102vh;
   opacity: 0;
   transition: opacity 1s ease-out;
   user-select: none;
