@@ -141,7 +141,7 @@ body {
 }
 
 .stack {
-    margin-top: 10vh;
+    margin-top: 6vh;
     display: flex;
     flex-direction: column; /* Stack rows vertically */
     justify-content: center;
