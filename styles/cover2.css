@@ -312,18 +312,29 @@ i.p-text {
 }
 #pain {
     z-index: 15;
-    width: 21vw;
+    width: 20vw;
+    height: 40vh;
     position: absolute;
     right: 7vw;
-    top: 27vh;
+    top: 10vh;
     border-radius: 10px;
     filter: brightness(105%);
+    opacity: 0.9;
+}
+
+#pain2 {
+    top: 56vh;
+    right: 6vw;
+    width: 23vw;
+    position: absolute;
+    border-radius: 10px;
+    filter: brightness(119%);
     opacity: 0.9;
 }
 .goodbye {
     margin-top: 275px; 
     color:black; 
-    z-index: 99;
+    z-index: 90;
     text-decoration: underline;
 }
 
@@ -345,3 +356,13 @@ i.p-text {
         display: none;
     }
 }
+
+#viewer {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 110vh;
+    background-color: rgb(0, 0, 0, 0.8);
+  }
+  

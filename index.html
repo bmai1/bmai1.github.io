@@ -34,7 +34,7 @@
       </div>
   </div>
   <footer>
-    <p class="float-md-start"><a class="p-text" target="_blank" href="https://github.com/bmai1/bmai1.github.io"><span style="display:inline-block; transform: rotate(180deg);">&copy;</span>2023 maidq</a> | not copyrighted | <span class="p-text" onclick="window.scrollTo(0, 0);">back to top</span></p>
+    <p class="float-md-start"><a class="p-text" target="_blank" href="https://github.com/bmai1/bmai1.github.io"><span style="display:inline-block; transform: rotate(180deg);">&copy;</span>2023 maidq</a> | not copyrighted | <span class="p-text" onclick="window.scrollTo(0, 0); closeViewer();">back to top</span></p>
   </footer>
   <div class="scroll-div1">
     <div id="overlay1"></div>
@@ -116,8 +116,10 @@
     <div class="dt-left" style="z-index:10">
       <iframe id="player" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4T2gW5myHwN9MbaFxHwwpU?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
+    <div id="viewer" onclick="closeViewer()" style="z-index: 99;"></div>
     <div class="dt-right" style="z-index:10">
-      <img id="pain" src="images/madd.jpg">
+      <img onclick="openViewer('madd.jpg')" id="pain" src="images/madd.jpg">
+      <img onclick="openViewer('9:12.jpg')" class="grow" id="pain2" src="images/9:12.jpg">
     </div>
     <h2 class="goodbye"><a class="pear-text" href="https://youtu.be/3s9sVM4KWTE">thanks for visiting, i guess.</a></h2>
     <div class="sky2"></div>
@@ -135,6 +137,7 @@
   <script src="parallax.js"></script>
   <script src="preload.js"></script>
   <script src="onload.js"></script>
+  <script src="art.js"></script>
   <script src="https://kit.fontawesome.com/12d193f302.js" crossorigin="anonymous"></script>
 </body>
 </html>
