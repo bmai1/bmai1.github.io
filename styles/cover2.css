@@ -98,7 +98,7 @@ body {
     align-items: center;
     position: fixed;
     bottom: -100%; /* Initially hide the div below the viewport */
-    background-color: #5d3140;
+    background-color: #804b5c;
     opacity: 0;
     transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
     color: rgb(255, 235, 235);
@@ -343,7 +343,7 @@ i.p-text {
         display: none;
     }
     .text-container {
-        font-size: 13px;
+        font-size: 12.5px;
         width: 72%;
     }
     .meme {

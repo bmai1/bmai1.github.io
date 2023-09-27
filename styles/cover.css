@@ -201,7 +201,12 @@ body {
 .maidq-text:hover {
   color:rgb(255, 218, 236);
 }
-
+@media only screen and (max-height: 700px) {
+  .maidq-text {
+    display: none;
+  }
+  
+}
 .typewriter {
   /* z-index: 10; */
   transform: translateY(10%);
