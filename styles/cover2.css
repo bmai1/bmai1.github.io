@@ -136,7 +136,7 @@ body {
     border: 1px solid pink;
     border-radius: 4px;
     z-index: 12;
-    max-height: 17vh;
+    max-height: 16vh;
     /* padding: 1vw; */
 }
 
@@ -272,6 +272,26 @@ footer {
     height: 70px;
 }
 
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  footer {
+      display: none;
+  }
+  .down-cnt {
+    height: 50px;
+    font-size: 0px !important;
+    bottom: 20px !important;
+  }
+  i {
+    font-size: 15px !important;
+  }
+  #social {
+    display: none;
+  }
+  .goodbye {
+    margin-top: 100px !important;
+  }
+}
+
 .down-cnt {
     color: pink;
     display: flex;
@@ -338,7 +358,7 @@ i.p-text {
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .dt-left, .dt-right {
         display: none;
     }
