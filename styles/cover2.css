@@ -416,8 +416,11 @@ i.p-text {
 }
 
 @media only screen and (max-width: 900px) {
+    .layer1, .layer2, .layer3 {
+      display: none;
+    }
     .typewriter {
-      z-index: 20 !important;
+      z-index: 19;
     }
     .dt-left, .dt-right {
         display: none;
