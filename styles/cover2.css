@@ -356,7 +356,7 @@ footer {
     position: absolute;
     bottom: 50px;
     display: flex;
-    z-index: 20;
+    z-index: 50;
     transition: color 0.5s ease, transform 0.5s ease;
 }
 .down-cnt:hover {
@@ -420,7 +420,7 @@ i.p-text {
       display: none;
     }
     .typewriter {
-      z-index: 19;
+      z-index: 15;
     }
     .dt-left, .dt-right {
         display: none;
