@@ -4,64 +4,56 @@ const sd3 = document.querySelector('.scroll-div3');
 const ed  = document.querySelector('.end-div');
 const welcomeDiv = document.querySelector('.welcome');
 
+const layers = document.querySelectorAll('.lax');
 
 window.addEventListener('scroll', () => {
+  
   // Get the current scroll position
   const scrollPosition = window.scrollY;
+
+  if (scrollPosition < window.innerHeight * 0.5) {
     // Calculate the parallax effect for each layer
-  const parallax = scrollPosition * 0.2;
+    const parallax = scrollPosition * 0.2;
 
-  // document.querySelector('.sky').style.filter = `brightness(calc(100% - ${parallax * 0.7}%))`;
-  document.querySelector('.abt-me').style.opacity = `calc(100% - ${parallax * 1.8}%)`;
-  document.querySelector('.sky').style.opacity = `calc(100% - ${parallax}%)`;
-  // document.querySelector('.skyset').style.opacity = `${parallax * 0.1}%`;
+    // document.querySelector('.sky').style.filter = `brightness(calc(100% - ${parallax * 0.7}%))`;
+    document.querySelector('.abt-me').style.opacity = `calc(100% - ${parallax * 1.8}%)`;
+    document.querySelector('.sky').style.opacity = `calc(100% - ${parallax}%)`;
 
-  
-  // document.querySelector('.sun').style.transform = `translateY(${parallax * 7}px)`;
-  // document.querySelector('.sun').style.filter = `saturate(calc(100% + ${parallax * 7}%))`;
-  
-  document.querySelector('.layer1').style.transform = `translateY(${parallax * 3}px)`;
-  document.querySelector('.layer1-ext').style.transform = `translateY(calc(${parallax * 3}px + 100vh))`;
+    layers.forEach((layer, index) => {
+      const translateY = parallax * (3 - index * 0.25); // Adjust as needed
+      layer.style.transform = `translateY(${translateY}px)`;
+    });
 
-  document.querySelector('.layer2').style.transform = `translateY(${parallax * 2.75}px)`;
-  document.querySelector('.layer2-ext').style.transform = `translateY(calc(${parallax * 2.5}px + 100vh))`;
-
-  document.querySelector('.layer3').style.transform = `translateY(${parallax * 2.5}px)`;
-  document.querySelector('.layer4').style.transform = `translateY(${parallax * 2.25}px)`;
-  document.querySelector('.layer5').style.transform = `translateY(${parallax * 2}px)`;
-  document.querySelector('.layer6').style.transform = `translateY(${parallax * 1.75}px)`;
-  document.querySelector('.layer7').style.transform = `translateY(${parallax * 1.5}px)`;
-  document.querySelector('.layer8').style.transform = `translateY(${parallax * 1.25}px)`;
-  
-
-  const welcomeParallax = scrollPosition * 0.9; // Adjust the factor for slower scrolling
-  // Apply the parallax effect to the .welcome div
-  document.querySelector('.welcome').style.transform = `translateY(calc(10% + ${welcomeParallax}px))`;
-    
+    document.querySelector('.layer1-ext').style.transform = `translateY(calc(${parallax * 3}px + 100vh))`;
+    document.querySelector('.layer2-ext').style.transform = `translateY(calc(${parallax * 2.5}px + 100vh))`;
 
 
-  if (scrollPosition >= window.innerHeight * 0.5 && scrollPosition < window.innerHeight * 2.5) {
+    const welcomeParallax = scrollPosition * 0.9;
+    document.querySelector('.welcome').style.transform = `translateY(calc(10% + ${welcomeParallax}px))`;
+  }
+
+  if (scrollPosition >= window.innerHeight * 0.5 && scrollPosition < window.innerHeight * 1.5) {
     sd1.classList.add('active');
     sd2.classList.remove('active');
-    sd3.classList.remove('active');
-    ed.classList.remove('active');
+    // sd3.classList.remove('active');
+    // ed.classList.remove('active');
     welcomeDiv.style.opacity = 0;
   } 
-  else if (scrollPosition >= window.innerHeight * 2.5 && scrollPosition < window.innerHeight * 4) {
+  else if (scrollPosition >= window.innerHeight * 1.5 && scrollPosition < window.innerHeight * 2.5) {
     sd1.classList.remove('active');
     sd2.classList.add('active');
     sd3.classList.remove('active');
-    ed.classList.remove('active');
+    // ed.classList.remove('active');
   }
-  else if (scrollPosition >= window.innerHeight * 4 && scrollPosition < window.innerHeight * 5) {
-    sd1.classList.remove('active');
+  else if (scrollPosition >= window.innerHeight * 2.5 && scrollPosition < window.innerHeight * 3.5) {
+    // sd1.classList.remove('active');
     sd2.classList.remove('active');
     sd3.classList.add('active');
     ed.classList.remove('active');
   }
-  else if (scrollPosition >= window.innerHeight * 5) {
-    sd1.classList.remove('active');
-    sd2.classList.remove('active');
+  else if (scrollPosition >= window.innerHeight * 3.5) {
+    // sd1.classList.remove('active');
+    // sd2.classList.remove('active');
     sd3.classList.remove('active');
     ed.classList.add('active');
   }
