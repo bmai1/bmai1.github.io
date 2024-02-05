@@ -99,10 +99,10 @@ body {
   z-index: 2;
   background-image: url("../images/lax/layer7.png");
 }
-.layer8 {
+/* .layer8 {
   z-index: 0;
   background-image: url("../images/lax/layer8.png");
-}
+} */
 
 .layer1-ext {
   z-index: 14;
