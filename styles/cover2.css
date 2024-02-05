@@ -448,5 +448,8 @@ i.p-text {
     width: 100vw;
     height: 110vh;
     background-color: rgb(0, 0, 0, 0.8);
-  }
+}
   
+.rm {
+    transition: opacity 0.5s ease;
+}
