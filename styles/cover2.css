@@ -239,7 +239,7 @@ body {
 }
 
 #overlay2 {
-    background-color: rgb(253, 205, 219, 0.15);
+    background-color: rgb(253, 205, 219, 0.1);
     z-index: 12;
     height: 100vh;
     width: 100vw;
