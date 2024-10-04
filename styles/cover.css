@@ -89,40 +89,6 @@ body {
   font-size: 15px;
 }
 
-
-@media only screen and (max-width: 900px) {
-  #honey, #honey2 {
-    display: none;
-  }
-  
-}
-
-#honey {
-  filter: brightness(123%) contrast(80%) saturate(80%) hue-rotate(-10deg);
-  z-index: 12;
-  position: absolute;
-  right: -90px;
-  bottom: 0%;
-  height: 100vh;
-  opacity: 0;
-  transition: opacity 1s ease-out;
-  user-select: none;
-  pointer-events: none;
-  
-}
-#honey2 {
-  filter: brightness(123%) contrast(80%) saturate(90%);
-  z-index: 12;
-  position: absolute;
-  left: -50px;
-  bottom: 0%;
-  height: 102vh;
-  opacity: 0;
-  transition: opacity 1s ease-out;
-  user-select: none;
-  pointer-events: none;
-}
-
 .grow-on-hover {
   transition: transform 0.5s ease; /* Add a smooth transition effect */
 }
