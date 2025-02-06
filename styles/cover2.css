@@ -154,10 +154,10 @@ body {
     align-items: center;
     position: fixed;
     bottom: -100%; /* Initially hide the div below the viewport */
-    background-color: #1c3250;
+    background-color: #252525;
     opacity: 0;
     transition: opacity 0.5s, bottom 0.75s; /* Transition the bottom property */
-    color: rgb(255, 235, 235);
+    color: rgb(255, 255, 255);
 }
 
 .scroll-div1.active {
@@ -171,7 +171,6 @@ body {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    pointer-events: none;
 }
 
 .dt-left, .dt-right {
@@ -293,7 +292,7 @@ body {
 }
 
 .text-container {
-    width: 35%;
+    width: 50%;
 }
 
 .nv-cnt {
