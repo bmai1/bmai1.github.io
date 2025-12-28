@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brian Mai's Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="sky"></div>
+  <img id="layer1" class="mountains" src="images/parallax/layer1.png">
+  <img id="layer2" class="mountains" src="images/parallax/layer2.png">
+  <img id="layer3" class="mountains" src="images/parallax/layer3.png">
+  <img id="layer4" class="mountains" src="images/parallax/layer4.png">
+  <img id="layer5" class="mountains" src="images/parallax/layer5.png">
+  <img id="layer6" class="mountains" src="images/parallax/layer6.png">
+  <img id="layer7" class="mountains" src="images/parallax/layer7.png">
+
+  <div id="name">
+    <h1 id="name-text">Hi, I'm Brian Mai.</h1>
+    <p id="welcome-text">Welcome to my portfolio website.</p>
+  </div>
+
+  <div id="mobile-name">
+    <h1 id="name-text">Hi, I'm Brian Mai.</h1>
+    <p id="welcome-text">Welcome to my portfolio website.</p>
+  </div>
+
+  <div id="container">
+    <div id="navbar">
+      <div>
+        <button id="about-me-concise-button">About me (concise)</button>
+        <button id="about-me-button">About me</button>
+        <button id="projects-button">Projects</button>
+        <a id="linkedin-icon" target="_blank" href="https://www.linkedin.com/in/brian-mai-104b54214/"><i class="fab fa-linkedin-in p-text"></i></a>
+        <a id="github-icon" idtarget="_blank" href="https://github.com/bmai1"><i class="fab fa-github p-text"></i></a>
+      </div>
+    </div>
+    <div id="about-me-concise">
+      <p>
+        I'm a software engineering major in the Bay Area expecting to graduate in December 2027. I write code in languages such as Python, JavaScript, Java, and C++. I have experience with frameworks and libraries like React, Next.js, Flask, TensorFlow, Matplotlib, and NumPy. I'm interested in web app development, machine learning, and robotics.
+      </p>
+      <div class="figure-container">
+        <figure>
+          <img id="robot" src="images/robot.jpg">
+          <figcaption>A simple autonomous robot I built and programmed.</figcaption>
+        </figure>
+        <figure>
+          <img id="robotics" src="images/robotics.jpg">
+          <figcaption>Me (left) with FRC Team 2813 at a robotics competition.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div id="about-me">
+      <p>
+        I'm a software engineering major in the Bay Area expecting to graduate in December 2027. I like working on projects that offer solutions to problems people have, which may sound vague, but I see it as a way to give back to people who have helped me figure out how to solve my own problems.
+        <br><br>
+        I write code in languages such as Python, JavaScript, Java, C++, and I'm currently learning Rust. I have experience with frameworks and libraries like React, Next.js, Flask, TensorFlow, Matplotlib, and NumPy. I develop for macOS, Windows, and Linux, and cross-platform availability is important to me, so I also have experience with Docker containerization.  I'm interested in web app development, machine learning, and robotics. With many projects of varying sizes, I use a lot of Git and GitHub for version control.
+        <br><br>
+      </p>
+      <div class="figure-container">
+        <figure>
+          <img id="robot" src="images/robot.jpg">
+          <figcaption>A simple autonomous robot I built and programmed.</figcaption>
+        </figure>
+        <figure>
+          <img id="robotics" src="images/robotics.jpg">
+          <figcaption>Me (left) with FRC Team 2813 at a robotics competition.</figcaption>
+        </figure>
+      </div>
+      <p>
+        Outside of software development and engineering, I also love the arts. I won't fully label myself as an artist, since I am primarily a programmer, but I practice traditional arts like sketching and painting, and I play several instruments like the classical guitar and piano. I drew up the parallax mountain background on this website using Krita, an amazing open-source painting program.
+      </p>
+      <div class="figure-container">
+        <figure>
+          <img id="drawing" src="images/drawing.jpg">
+          <figcaption>I sometimes draw characters from video games.</figcaption>
+        </figure>
+      </div>
+      <p>
+        In my free time, I run an unmonetized music curation channel on YouTube with a modest following of 85,000 subscribers, but it is a little too unprofessional to link here. I mention it as I believe the ability to grow and manage a community is a valuable skill to have, especially in fields such as software engineering, where collaboration has led to so many great projects used today.
+      </p>
+      <div class="figure-container">
+        <figure>
+          <img id="analytics" src="images/analytics.png">
+          <figcaption>Here is an interesting snapspot of my channel analytics in December 2025.</figcaption>
+        </figure>
+      </div>
+      
+    </div>
+
+    <div id="projects">
+      <div class="project">
+        <h1>Museko</h1>
+        <p>Built with Python (Flask, TensorFlow, Matplotlib), JavaScript, and HTML/CSS.</p>
+        <div class="figure-container">
+          <figure>
+            <img id="museko" src="images/museko.png">
+            <figcaption>Audio visualization and genre predictions.</figcaption>
+          </figure>
+        </div>
+        <p>
+          A music classification and discovery tool using Essentia's <a target="_blank" href="https://essentia.upf.edu/models.html">genre_discogs400</a> model to output genre predictions for uploaded audio files. A Discogs release roulette with the ability to search for a specific genre was implemented by drawing a valid ID from the Discogs release database through its API. 
+          <br><br>
+          This app requires too much memory to be hosted online with free services, but a Flask server can be run locally to use this tool. Note that genre classification is currently not supported for Windows as one of the core libraries used does not have Python bindings for Windows. I am currently working on a preprocessing pipeline to feed audio files into the pretrained model so it can work on Windows without the library.
+        </p>
+        <a href="https://github.com/bmai1/museko" target="_blank">View the source code on GitHub.</a>
+
+      </div>
+      <div class="project">
+        <h1>shogi-rs</h1>
+        <p>Built with Rust and C++.</p>
+        <div class="figure-container">
+          <figure>
+            <img id="shogi" src="images/shogi.png">
+            <figcaption>A shogi GUI with multithreaded move evaluation.</figcaption>
+          </figure>
+        </div>
+        <p>A USI-compatible shogi GUI written in Rust. For those unfamiliar with shogi, it is essentially Japanese chess and is generally considered very complex due to the ability to drop captured pieces back onto the game board. The move evaluation for this GUI is currently using the <a target="_blank" href="https://github.com/HiraokaTakuya/apery_rust">apery_rust</a> shogi engine, and I plan to migrate to the YaneuraOu, a stronger shogi engine written in C++. I implemented joystick control with an Arduino UNO board, and plan to add support for more standard controllers such as Xbox and Playstation controllers.</p>
+        <a href="https://github.com/bmai1/shogi-for-crabs" target="_blank">View the source code on GitHub.</a>
+      </div>
+
+      <div class="project">
+        <h1>Komicate</h1>
+        <p>Built with TypeScript (Next.js, React), Node.js, PostgreSQL, Tailwind, and HTML/CSS.</p>
+        <div class="figure-container">
+          <figure>
+            <img id="komicate" src="images/komicate.png">
+            <figcaption>A shogi GUI with multithreaded move evaluation.</figcaption>
+          </figure>
+        </div>
+        <p>A social communication app based on Discord with features such as direct messages, group chats, and video calls. I primarily built this as a way to familiarize myself with Next.js and TypeScript, since I already had fullstack experience with vanilla JavaScript.</p>
+        <a href="https://github.com/bmai1/komicate" target="_blank">View the source code on GitHub.</a>
+        <br>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="scroll.js"></script>
+  <script src="buttons.js"></script>
+  <script src="https://kit.fontawesome.com/12d193f302.js" crossorigin="anonymous"></script>
+</body>
+</html>

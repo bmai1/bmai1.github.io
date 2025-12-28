@@ -1,0 +1,207 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+html {
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  background-color: #03111A;
+  font-family: 'Noto Sans', sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+#sky {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50vw;
+  background-color: rgb(229, 246, 255);
+}
+
+.mountains {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgb(255, 155, 155, 0.05);
+  pointer-events: none;
+}
+
+#layer1 { z-index: 7; }
+#layer2 { z-index: 6; }
+#layer3 { z-index: 5; }
+#layer4 { z-index: 4; }
+#layer5 { z-index: 3; }
+#layer6 { z-index: 2; }
+#layer7 { z-index: 1; }
+
+#name {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 60vw;
+  width: 100%;
+  color: #03111A;
+  pointer-events: none;
+}
+
+#mobile-name {
+  display: none;
+}
+
+#name-text {
+  font-size: 3rem;
+}
+
+#welcome-text {
+  margin-left: 3px;
+  margin-top: -30px;
+}
+
+#container {
+  position: absolute;
+  top: 150%;
+  z-index: 8;
+  width: 50%;
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#navbar {
+  margin-top: 30px;
+}
+
+#navbar button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#navbar button:hover {
+  color: white;
+}
+
+#navbar a {
+  position: absolute;
+  top: 25px;
+  font-size: 25px;
+  color: #737c88;
+  transition: color 0.2s ease;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+#linkedin-icon {
+  right: 70px;
+}
+
+#github-icon {
+  right: 35px;
+}
+
+#about-me-concise-button {
+  color: white;
+  text-decoration: underline;
+}
+
+#about-me-button,
+#projects-button {
+  color: #737c88;
+}
+
+#about-me {
+  display: none;
+}
+
+#projects {
+  display: none;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #737c88;
+}
+
+#robot { width: 50%; }
+#robotics { width: 60%; }
+#drawing { width: 80%; }
+#analytics { width: 80%; }
+
+#museko { width: 50%; }
+#shogi { width: 60%; }
+#komicate { width: 80%; }
+
+.project a {
+  color: rgb(151, 188, 255);
+  transition: color 0.2s ease;
+}
+
+.project a:hover {
+  color: rgb(113, 154, 231);
+}
+
+@media (max-width: 800px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #name {
+    display: none;
+  }
+
+  #mobile-name {
+    position: absolute;
+    z-index: 10;
+    display: block;
+    margin-top: 40vh;
+    max-width: 100%;
+    color: white;
+    pointer-events: none;
+  }
+
+  #mobile-name h1 {
+    font-size: 35px;
+  }
+
+  #container {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #navbar a {
+    display: none;
+  }
+}
